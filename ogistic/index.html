@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>      
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>IXIT IA</title>
+      <link rel="icon" href="images/ixitianuevoSolo.png">
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">      
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="auth/loginStyle.css">            
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->      
+   </head>
+   <!-- body -->
+   <body class="main-layout">            
+      <!-- loader  -->
+      <div class="loader_bg">
+      <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <div id="mySidepanel" class="sidepanel">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+         <a href="index.html">INICIO </a>
+         <a href="#about">ACERCA DE </a>
+         <a href="#service">SERVICIOS  </a>
+         <a href="#vehicles">NUESTRO PRODUCTO</a>
+         <a href="#testimonial">TESTIMONIOS</a>
+         <a href="#contact">CONTACTOS</a>
+      </div>
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <!-- Botón de inicio de sesión -->
+         <a href="auth/login.html" class="login-link">
+            <button id="loginBtn" class="login-button">Inicio de Sesión</button>         
+         </a>
+         <div class="header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-4 col-sm-4">
+                     <div class="logo">
+                        <a href="index.html"><img src="images/ixitia-LOGO-NUEVO.png" alt="#"/></a>
+                     </div>
+                  </div>
+                  <div class="col-md-8 col-sm-8">
+                     <div class="right_bottun">
+                        <ul class="conat_info d_none ">
+                           <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                           <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                        </ul>
+                        <button class="openbtn" onclick="openNav()"><img src="images/menu_icon.png" alt="#"/> </button> 
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>                  
+      </header>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- banner -->
+      <section class="banner_main">
+         <div id="banner1" class="carousel slide banner_slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#banner1" data-slide-to="0" class="active"></li>
+               <li data-target="#banner1" data-slide-to="1"></li>
+               <li data-target="#banner1" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container-fluid">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-7 col-lg-5">
+                              <div class="text-bg">
+                                 <h1>La mejor compañia de seguridad y tranquilidad al volante</h1>
+                                 <span>No dudes en contactarnos para adquirir nuestro producto</span>
+                                 <a class="read_more" href="#">Contactanos</a>
+                              </div>
+                           </div>
+                           <div class="col-md-12 col-lg-7">
+                              <div class="row">
+                                 <div class="col-md-6">
+                                    <div class="ban_track">
+                                       <figure><img src="images/track.png" alt="#"/></figure>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <form class="transfot">
+                                       <div class="col-md-12">
+                                          <span>Servicio Competente</span>
+                                          <h3>Obten tu producto ahora</h3>
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="Ubicacion
+                                          " type="text" name="Location">
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="Ubicacion" type="text" name="Ubicacion">
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="Email" type="text" name="Email">
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="Numero" type="text" name="Numero">
+                                       </div>
+                                       <div class="col-md-12">
+                                          <button class="get_now">Obten tu presupuesto</button>
+                                       </div>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container-fluid">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-7 col-lg-5">
+                              <div class="text-bg">
+                                 <h1>Seguridad al volante</h1>
+                                 <span>No dudes en contactarnos para adquirir nuestro producto</span>
+                                 <a class="read_more" href="#">Contactanos</a>
+                              </div>
+                           </div>
+                           <div class="col-md-12 col-lg-7">
+                              <div class="row">
+                                 <div class="col-md-6">
+                                    <div class="ban_track">
+                                       <figure><img src="images/track.png" alt="#"/></figure>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <form class="transfot">
+                                       <div class="col-md-12">
+                                          <span>Servicios profesionales</span>
+                                          <h3>Obten un presupuesto</h3>
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="Ubicacion" type="text" name="Ubicacion ">
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="Destino" type="text" name="Destino">
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="Email" type="text" name="Email">
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="Numero" type="text" name="Numero">
+                                       </div>
+                                       <div class="col-md-12">
+                                          <button class="get_now">Obten tu presupuesto</button>
+                                       </div>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container-fluid">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-7 col-lg-5">
+                              <div class="text-bg">
+                                 <h1>Seguridad al volante</h1>
+                                 <span>No dudes en contactarnos para adquirir nuestro producto</span>
+                                 <a class="read_more" href="#">Leer mas</a>
+                              </div>
+                           </div>
+                           <div class="col-md-12 col-lg-7">
+                              <div class="row">
+                                 <div class="col-md-6">
+                                    <div class="ban_track">
+                                       <figure><img src="images/track.png" alt="#"/></figure>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <form class="transfot">
+                                       <div class="col-md-12">
+                                          <span>Servicio profesional</span>
+                                          <h3>Obten un presupuesto</h3>
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="Ubicacion" type="text" name="Location">
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="Destino" type="text" name="Destino">
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="Email" type="text" name="Email">
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="Numero" type="text" name="Numero">
+                                       </div>
+                                       <div class="col-md-12">
+                                          <button class="get_now">Obten tu presupuesto</button>
+                                       </div>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end banner -->      
+      <!-- about section -->
+      <div id="about" class="about">
+         <div class="container">
+            <div class="row d_flex">
+               <div class="col-md-6">
+                  <div class="about_right">
+                     <figure><img src="images/ixitianuevoSolo.png" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="titlepage">
+                     <h2>Acerca de nosotros</h2>
+                     <p> Somos una empresa comprometida a ofrecer seguridad para los transportistas, con el uso de tecnologias emergentes
+                     </p>
+                     <a class="read_more" href="#">Leer mas</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section -->
+      <!-- service section -->
+      <div id="service" class="service">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="titlepage">
+                     <h2>Lo que ofrecemos</h2>
+                     <p>Con nuestro gran repertorio de funcionalidades ofrecemos seguridad ante el volante</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="service_main">
+                     <div class="service_box blu_colo">
+                        <i><img src="images/somnolencia.png" alt="#"/></i>
+                        <h4>Deteccion de somnolencia</h4>
+                     </div>
+                     <div class="service_box yelldark_colo">
+                        <i><img src="images/ser3.png" alt="#"/></i>
+                        <h4>Optimizacion de rutas</h4>
+                     </div>
+                     <div class="service_box yell_colo">
+                        <i><img src="images/analisis1.png" alt="#"/></i>
+                        <h4>Analisis en tiempo real</h4>
+                     </div>
+                     <div class="service_box yelldark_colo">
+                        <i><img src="images/alerta.png" alt="#"/></i>
+                        <h4>Alertas oportunas</h4>
+                     </div>
+                     <div class="service_box yell_colo">
+                        <i><img src="images/reportelogo.png" alt="#"/></i>
+                        <h4>Reporte de datos para gestion</h4>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>      
+      <!-- end service section -->
+      <!-- vehicles section -->
+      <section id="vehicles" class="vehicles">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Nuestro producto</h2>
+                     <p>El diseño de nuestro dispositivo</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="veh" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#veh" data-slide-to="0" class="active"></li>
+               
+               <li data-target="#veh" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/DispositivoIxitia1.png" alt="#"/></figure>
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/DispositivoIxitia2.png" alt="#"/></figure>
+                              </div>
+                              <h3 class="blac_co"></h3>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/DispositivoIxitia1.png" alt="#"/></figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/DispositivoIxitia1.png" alt="#"/></figure>
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/DispositivoIxitia2.png" alt="#"/></figure>
+                              </div>
+                              <h3 class="blac_co"></h3>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/DispositivoIxitia1.png" alt="#"/></figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/DispositivoIxitia1.png" alt="#"/></figure>
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/DispositivoIxitia2.png" alt="#"/></figure>
+                              </div>
+                              <h3 class="blac_co"></h3>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/DispositivoIxitia1.png" alt="#"/></figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#veh" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </a>
+            <a class="carousel-control-next" href="#veh" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <a class="read_more" href="#">Leer mas</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end vehicles section -->
+      <!-- testimonial section -->
+      <div id="testimonial" class="testimonial bottom_cross bottom_cross2">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Testimonio</h2>
+                     <p>Lider en liderazgo</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div id="myCarousel" class="carousel slide testimonial_Carousel " data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container">
+                              <div class="carousel-caption ">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="testimonial_box">
+                                          <figure><img src="images/KarlaCeo1.jpg" alt="#"/></figure>
+                                          <h3>Karla Denis <br><span class="kisu">( Ceo)</span></h3>
+                                          <p>Un caso de exito absoluto, nacia en el año 2004, comenzo su camino para convertirse en la CEO.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="testimonial_box">
+                                          <figure><img src="images/KarlaCeo1.jpg" alt="#"/></figure>
+                                          <h3>Karla Denis <br><span class="kisu">( Ceo)</span></h3>
+                                          <p>Un caso de exito absoluto, nacia en el año 2004, comenzo su camino para convertirse en la CEO de la empresa.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="full cross_layout">
+                                          <div class="testimonial_box">
+                                             <figure><img src="images/KarlaCeo1.jpg" alt="#"/></figure>
+                                             <h3>Karla Denis <br><span class="kisu">( Ceo)</span></h3>
+                                             <p>Un caso de exito absoluto, nacia en el año 2004, comenzo su camino para convertirse en la CEO de la empresa</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                     <i class="fa fa-caret-left" aria-hidden="true"></i>
+                     </a>
+                     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                     <i class="fa fa-caret-right" aria-hidden="true"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <a class="read_more" href="#">Leer mas</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end testimonial section -->
+      <!-- choose section -->
+      <div class="choose">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Porque elegirnos</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-5">
+                  <div class="choose_box">
+                     <i><img src="images/why1.png" alt="#"/></i>
+                     <h3>Nuestra vision</h3>
+                     <p>Como innovacion como insignia, IXIT IA esta dedicado a operar con planes de contingencia en caso de emergencias presentadas durante el trayecto.</p>
+                     <a class="read_more" href="#">Leer mas</a>
+                  </div>
+               </div>
+               <div class="col-md-5 offset-md-2">
+                  <div class="choose_box">
+                     <i><img src="images/why2.png" alt="#"/></i>
+                     <h3>Las entregas</h3>
+                     <p>Contamos con un servicio de logista optimo para entregas y atencion al cliente.</p>
+                     <a class="read_more" href="#">Leer mas</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end choose section -->
+      <!-- contact section -->
+      <div id="contact" class="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Solicita informes</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="con_bg">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-5">
+                     <form id="request" class="main_form">
+                        <div class="row">
+                           <div class="col-md-12 ">
+                              <input class="contactus" placeholder="Nombre" type="type" name="Name"> 
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contactus" placeholder="Email" type="type" name="Email"> 
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contactus" placeholder="Numero telefonico" type="type" name="Phone Number">                          
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contactusmess" placeholder="Mensaje" type="type" Message="Name">
+                           </div>
+                           <div class="col-md-12">
+                              <button class="send_btn">Enviar</button>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-md-7">
+                     <div class="co_tru">
+                        <figure><img src="images/truc4.png" alt="#"/></figure>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end contact section -->
+      <!--  footer -->
+      <footer>
+         <div class="footer bottom_cross1">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4">
+                     <ul class="location_icon">
+                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> Direccion : Alamo Veracruz <br> - 
+                        </li>
+                        <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>Telefono :  +(52) 782 122 1416</li>
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>Email : ---------------</li>
+                     </ul>
+                     <form class="bottom_form">
+                        <h3>Nuevo seguidor!</h3>
+                        <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
+                        <button class="sub_btn">Subscribete</button>
+                     </form>
+                  </div>
+                  <div class="col-md-8">
+                     <div class="map">
+                        <figure><img src="images/map.png" alt="#"/></figure>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>IXIT IA, Tu empresa de transporte de calidad y seguridad<a href="https://html.design/"></a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>   
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+         function openNav() {
+           document.getElementById("mySidepanel").style.width = "250px";
+         }
+         
+         function closeNav() {
+           document.getElementById("mySidepanel").style.width = "0";
+         }
+      </script>
+   </body>
+</html>
+
+
+

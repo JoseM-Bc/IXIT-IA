@@ -1,0 +1,150 @@
+/* === Reset y tipografía === */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* === Contenedor principal del producto === */
+.producto-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+/* === Galería === */
+.galeria {
+  flex: 1 1 400px;
+}
+
+.imagen-principal {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.miniaturas img {
+  width: 48%;
+  margin-right: 4%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.miniaturas img:hover {
+  border-color: #23484e;
+}
+
+.miniaturas img:last-child {
+  margin-right: 0;
+}
+
+/* === Detalles del producto === */
+.detalle-producto {
+  flex: 1 1 400px;
+}
+
+.detalle-producto h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.precio {
+  font-size: 1.6rem;
+  color: #23484e;
+  margin-bottom: 1rem;
+}
+
+.precio-original {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.caracteristicas {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.caracteristicas li {
+  margin-bottom: 0.5rem;
+}
+
+/* === Formulario de compra === */
+.formulario-compra label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.formulario-compra input,
+.formulario-compra select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.btn-comprar {
+  margin-top: 1.5rem;
+  width: 100%;
+  background-color: #23484e;
+  color: white;
+  padding: 1rem;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.btn-comprar:hover {
+  background-color: #3b5255;
+}
+
+/* === Mensaje de éxito === */
+.mensaje-exito {
+  background-color: #23484e;
+  color: #155724;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #23484e;
+}
+
+/* === Errores de validación === */
+.errores {
+  background-color: #23484e;
+  color: #1d616b;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #23484e;
+}
+
+.errores ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.errores li {
+  margin-bottom: 0.5rem;
+}
+
